@@ -27,7 +27,7 @@
 */
 
 
-// inslude the SPI library:
+// include the SPI library:
 #include <SPI.h>
 
 
@@ -49,7 +49,7 @@ void loop() {
       digitalPotWrite(channel, level);
       delay(10);
     }
-    // wait a second at the top:
+    // wait a 1/10 second at the top:
     delay(100);
     // change the resistance on this channel from max to min:
     for (int level = 0; level < 255; level++) {
